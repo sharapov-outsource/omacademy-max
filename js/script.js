@@ -1325,6 +1325,13 @@
 			})
 					.trigger('resize');
 		}
+
+		const $callbackButton = $('#callback-button');
+		const $callbackForm = $('#callback-form');
+
+		$callbackButton.on('click', function () {
+			$callbackForm.toggle();
+		});
 	});
 
 }());
